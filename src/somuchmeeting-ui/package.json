@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "element-ui": "^2.4.0",
+    "moment": "^2.22.2",
     "vue": "^2.5.2",
+    "vue-fullcalendar": "^1.0.9",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

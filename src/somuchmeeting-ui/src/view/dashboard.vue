@@ -8,13 +8,16 @@
           </template>
           <el-menu-item-group>
             <el-menu-item index="1-1">
-              <i class="el-icon-date"></i>会议一览
+              <i class="el-icon-date"></i>
+              <router-link to="/">会议一览</router-link>
             </el-menu-item>
             <el-menu-item index="1-2">
-              <i class="el-icon-location-outline"></i>会议室管理
+              <i class="el-icon-location-outline"></i>
+              <router-link to="/manager">会议室管理</router-link>
             </el-menu-item>
             <el-menu-item index="1-3">
-              <i class="el-icon-edit-outline"></i>基础设置配置
+              <i class="el-icon-edit-outline"></i>
+              <router-link to="/infrastructure">基础设置配置</router-link>
             </el-menu-item>
           </el-menu-item-group>
         </el-submenu>
