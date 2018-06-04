@@ -41,7 +41,7 @@
       </div>
     </el-card>
     <el-dialog title="发起/修改会议" :visible.sync="formInline.dialogTableVisible" :before-close="handleClose">
-      <el-form ref="form" :model="form" label-width="80px">
+      <el-form ref="form" :model="meetingInfo" label-width="80px">
         <el-form-item label="活动名称">
           <el-input v-model="meetingInfo.name"></el-input>
         </el-form-item>
