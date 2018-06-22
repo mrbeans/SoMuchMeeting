@@ -73,3 +73,7 @@ body>.el-container {
   height: 178px;
   display: block;
 }
+
+.el-dialog .el-form-item .el-form-item__content div{
+  width: 100%;
+}

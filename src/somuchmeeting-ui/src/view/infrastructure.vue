@@ -21,16 +21,16 @@
       </div>
       <div class="text item">
         <el-table :data="device_data" border style="width: 100%">
-          <el-table-column fixed prop="name" label="设备名称" width="200"></el-table-column>
-          <el-table-column fixed prop="brand" label="设备品牌" width="200"></el-table-column>
-          <el-table-column fixed prop="model" label="设备型号" width="200"></el-table-column>
-          <el-table-column fixed prop="image" label="设备缩略图" width="200">            
+          <el-table-column fixed prop="name" label="设备名称" width="150"></el-table-column>
+          <el-table-column fixed prop="brand" label="设备品牌" width="100"></el-table-column>
+          <el-table-column fixed prop="model" label="设备型号" width="100"></el-table-column>
+          <el-table-column fixed prop="image" label="设备缩略图" width="150">            
               <template slot-scope="scope">
                 <img :src="scope.row.image" alt="" style="width: 50px;height: 50px">
               </template>
           </el-table-column>
-          <el-table-column prop="count" label="设备数量" width="200"></el-table-column>
-          <el-table-column prop="create_time" label="添加时间" width="200"></el-table-column>
+          <el-table-column prop="count" label="设备数量" width="100"></el-table-column>
+          <el-table-column prop="create_time" label="添加时间" width="150"></el-table-column>
           <el-table-column fixed="right" label="操作" width="*">
             <template slot-scope="scope">
               <el-button type="primary" icon="el-icon-edit" size="small">编辑</el-button>
@@ -40,7 +40,7 @@
         </el-table>
       </div>
     </el-card>
-    <el-dialog title="添加/编辑设备" :visible.sync="formInline.dialogTableVisible" width="30%" :before-close="handleClose">
+    <el-dialog title="添加/编辑设备" :visible.sync="formInline.dialogTableVisible" width="600px" :before-close="handleClose">
       <el-form ref="form" :model="meetingInfo" label-width="80px">
         <el-form-item label="设备名称">
           <el-input v-model="meetingInfo.name" clearable></el-input>

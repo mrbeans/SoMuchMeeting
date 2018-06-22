@@ -22,14 +22,14 @@
       </div>
       <div class="text item">
         <el-table :data="meeting_data" border style="width: 100%">
-          <el-table-column fixed prop="start_time" label="开始时间" width="200"></el-table-column>
-          <el-table-column fixed prop="end_time" label="结束时间" width="200"></el-table-column>
-          <el-table-column prop="board_room" label="会议室" width="200"></el-table-column>
-          <el-table-column prop="booked_by" label="预订人" width="120"></el-table-column>
+          <el-table-column fixed prop="start_time" label="开始时间" width="150"></el-table-column>
+          <el-table-column fixed prop="end_time" label="结束时间" width="150"></el-table-column>
+          <el-table-column fixed prop="board_room" label="会议室" width="200"></el-table-column>
+          <el-table-column prop="booked_by" label="预订人" width="100"></el-table-column>
           <el-table-column prop="partake_count" label="参会人数" width="100"></el-table-column>
-          <el-table-column prop="max_count" label="最多可容纳人数" width="200"></el-table-column>
-          <el-table-column prop="create_time" label="预定时间" width="200"></el-table-column>
-          <el-table-column fixed="right" label="操作" width="*">
+          <el-table-column prop="max_count" label="可容纳人数" width="100"></el-table-column>
+          <el-table-column prop="create_time" label="预定时间" width="150"></el-table-column>
+          <el-table-column fixed="right" label="操作" width="250">
             <template slot-scope="scope">
               <el-button type="primary" icon="el-icon-edit" size="small">编辑</el-button>
               <el-button type="danger" icon="el-icon-delete" size="small">取消预定</el-button>
@@ -40,7 +40,7 @@
         </el-table>
       </div>
     </el-card>
-    <el-dialog title="发起/修改会议" :visible.sync="formInline.dialogTableVisible" width="30%" :before-close="handleClose">
+    <el-dialog title="发起/修改会议" :visible.sync="formInline.dialogTableVisible" width="500px" :before-close="handleClose">
       <el-form ref="form" :model="meetingInfo" label-width="80px">
         <el-form-item label="会议时间">
           <div class="block">
@@ -57,7 +57,6 @@
           <el-option
             v-for="item in formInline.options"
             :key="item.value"
-            width="400px"
             :label="item.label"
             :value="item.value">
           </el-option>
