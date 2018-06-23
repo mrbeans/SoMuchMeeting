@@ -40,7 +40,7 @@
         </el-table>
       </div>
     </el-card>
-    <el-dialog title="添加/编辑设备" :visible.sync="formInline.dialogTableVisible" width="600px" :before-close="handleClose">
+    <el-dialog title="添加/编辑设备" :visible.sync="formInline.dialogTableVisible" width="520px" :before-close="handleClose">
       <el-form ref="form" :model="meetingInfo" label-width="80px">
         <el-form-item label="设备名称">
           <el-input v-model="meetingInfo.name" clearable></el-input>

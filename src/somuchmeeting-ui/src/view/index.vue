@@ -40,7 +40,7 @@
         </el-table>
       </div>
     </el-card>
-    <el-dialog title="发起/修改会议" :visible.sync="formInline.dialogTableVisible" width="500px" :before-close="handleClose">
+    <el-dialog title="发起/修改会议" :visible.sync="formInline.dialogTableVisible" width="520px" :before-close="handleClose">
       <el-form ref="form" :model="meetingInfo" label-width="80px">
         <el-form-item label="会议时间">
           <div class="block">

@@ -74,6 +74,9 @@ body>.el-container {
   display: block;
 }
 
-.el-dialog .el-form-item .el-form-item__content div{
+.el-dialog .el-form-item .el-form-item__content>div{
   width: 100%;
+}
+.el-dialog .el-form-item .el-form-item__content .el-badge{
+  margin: 10px;
 }
